@@ -1,0 +1,24 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.8.22'
+    repositories {
+        google()  // Android repositories
+        mavenCentral()  // Maven Central is recommended as jcenter is deprecated
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.7.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"  // Added Kotlin plugin dependency
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()  // Ensuring mavenCentral is listed here as well
+        maven { url 'https://jitpack.io' }  // Third-party libraries from JitPack
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

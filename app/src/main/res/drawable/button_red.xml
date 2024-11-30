@@ -1,0 +1,16 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#D32F2F" /> <!-- Darker red for pressed state -->
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+    <!-- Default state -->
+    <item>
+        <shape>
+            <solid android:color="#B71C1C" /> <!-- Default red background -->
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+</selector>

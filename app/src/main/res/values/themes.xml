@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#D32F2F</item> <!-- Red color for the primary color -->
+        <item name="colorPrimaryVariant">#B71C1C</item> <!-- Darker red for primary variant -->
+        <item name="colorOnPrimary">@color/white</item> <!-- White color for text/icons on the primary color -->
+
+        <!-- Set the default font family for the application -->
+
+
+        <!-- Secondary brand color (keep your teal color or change it if needed). -->
+        <item name="colorSecondary">#D32F2F</item>
+        <item name="colorSecondaryVariant">#B71C1C</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- ActionBar customization -->
+        <item name="android:textColorPrimary">#FFFFFF</item> <!-- White text color for ActionBar title -->
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item> <!-- Applying custom style to ActionBar -->
+    </style>
+
+    <!-- Custom ActionBar style (with red background and white title text) -->
+    <style name="CustomActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:titleTextColor" tools:ignore="NewApi">#FFFFFF</item> <!-- White text color for ActionBar title -->
+        <item name="android:background">#D32F2F</item> <!-- Red background for ActionBar -->
+    </style>
+
+    <!-- Theme for SplashActivity without ActionBar -->
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:windowNoTitle">true</item> <!-- Remove title bar -->
+        <item name="android:windowActionBar">false</item> <!-- Remove ActionBar -->
+        <!-- Optional background color or image -->
+        <item name="android:windowBackground">@android:color/white</item> <!-- White background -->
+    </style>
+</resources>

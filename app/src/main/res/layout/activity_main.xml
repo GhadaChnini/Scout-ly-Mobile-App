@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/B2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="16dp"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".Activities.RegisterActivity">
+
+    <!-- Title or Welcome Text -->
+<TextView
+android:id="@+id/welcome_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="40dp"
+    android:layout_marginBottom="250dp"
+android:gravity="center"
+android:text="Register Your Account"
+android:textColor="#D32F2F"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Name Field -->
+<EditText
+android:id="@+id/name_id"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="30dp"
+android:layout_marginStart="18dp"
+android:layout_marginEnd="18dp"
+android:background="@drawable/text_view_red"
+android:ems="10"
+android:hint="Name"
+android:inputType="textWebEmailAddress|textPersonName"
+android:padding="10dp"
+android:textColor="#D32F2F"
+    android:textColorHint="#FFCDD2"
+    android:textSize="14sp"
+    android:textStyle="normal"
+    app:layout_constraintTop_toBottomOf="@id/welcome_text"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Job Field -->
+<EditText
+android:id="@+id/job_id"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:layout_marginStart="18dp"
+android:layout_marginEnd="18dp"
+android:background="@drawable/text_view_red"
+android:ems="10"
+android:hint="Job"
+android:inputType="textPersonName"
+android:padding="10dp"
+android:textColor="#D32F2F"
+    android:textColorHint="#FFCDD2"
+    android:textSize="14sp"
+    android:textStyle="normal"
+    app:layout_constraintTop_toBottomOf="@id/name_id"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Gender Field -->
+<EditText
+android:id="@+id/gender_id"
+style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:layout_marginStart="18dp"
+android:layout_marginEnd="18dp"
+android:background="@drawable/text_view_red"
+android:ems="10"
+android:hint="Gender"
+android:inputType="textShortMessage"
+android:padding="10dp"
+android:textColor="#D32F2F"
+    android:textColorHint="#FFCDD2"
+    android:textSize="14sp"
+    android:textStyle="normal"
+    app:layout_constraintTop_toBottomOf="@id/job_id"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Birthdate Field -->
+<EditText
+android:id="@+id/date_id"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:layout_marginStart="18dp"
+android:layout_marginEnd="18dp"
+android:background="@drawable/text_view_red"
+android:gravity="center"
+android:hint="Set Birthdate"
+android:padding="10dp"
+android:shadowColor="#A86565"
+android:textColor="#D32F2F"
+    android:textColorHint="#FFCDD2"
+    android:textSize="14sp"
+    android:textStyle="normal"
+    app:layout_constraintTop_toBottomOf="@id/gender_id"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Username Field -->
+<EditText
+android:id="@+id/user_name_id"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:layout_marginStart="18dp"
+android:layout_marginEnd="18dp"
+android:background="@drawable/text_view_red"
+android:ems="10"
+android:hint="User Name"
+android:inputType="textPersonName"
+android:padding="10dp"
+android:textColor="#D32F2F"
+    android:textColorHint="#FFCDD2"
+    android:textSize="14sp"
+    android:textStyle="normal"
+    app:layout_constraintTop_toBottomOf="@id/date_id"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Password Field -->
+<EditText
+android:id="@+id/password_id"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:layout_marginStart="18dp"
+android:layout_marginEnd="18dp"
+android:background="@drawable/text_view_red"
+android:ems="10"
+android:hint="Password"
+android:inputType="textPersonName|textPassword"
+android:padding="10dp"
+android:textColor="#D32F2F"
+    android:textColorHint="#FFCDD2"
+    android:textSize="14sp"
+    android:textStyle="normal"
+    app:layout_constraintTop_toBottomOf="@id/user_name_id"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Sign Up Button -->
+<Button
+android:id="@+id/sign_button_id"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="30dp"
+android:layout_marginStart="18dp"
+android:layout_marginEnd="18dp"
+    android:background="@drawable/button_rounded"
+    android:text="Sign Up"
+    android:textColor="#FFFFFF"
+    app:layout_constraintTop_toBottomOf="@id/password_id"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Log In Button -->
+<Button
+android:id="@+id/show_btn"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="7dp"
+android:layout_marginStart="18dp"
+android:layout_marginEnd="18dp"
+    android:background="@drawable/button_rounded"
+    android:text="Log in"
+    android:textColor="#FFFFFF"
+    app:layout_constraintTop_toBottomOf="@id/sign_button_id"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

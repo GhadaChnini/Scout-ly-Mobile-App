@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:titleTextColor">#FFFFFF
+        </item> <!-- White text color for ActionBar title -->
+        <item name="android:background">#D32F2F</item> <!-- Red background for ActionBar -->
+    </style>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="1dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#90000000" />
+            <corners android:bottomRightRadius="25dp" android:bottomLeftRadius="25dp"
+                android:topLeftRadius="25dp" android:topRightRadius="25dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="1dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#99000000" />
+            <corners android:bottomRightRadius="25dp" android:bottomLeftRadius="25dp"
+                android:topLeftRadius="25dp" android:topRightRadius="25dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="1dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#B3000000" />
+            <corners android:bottomRightRadius="25dp" android:bottomLeftRadius="25dp"
+                android:topLeftRadius="25dp" android:topRightRadius="25dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="1dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#CC000000" />
+            <corners android:bottomRightRadius="25dp" android:bottomLeftRadius="25dp"
+                android:topLeftRadius="25dp" android:topRightRadius="25dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+            <solid android:color="#D9B3B3B3" />
+            <corners android:bottomRightRadius="25dp" android:bottomLeftRadius="25dp"
+                android:topLeftRadius="25dp" android:topRightRadius="25dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#000000"/>
+            <stroke android:width="3dp" android:color="#FF0000"/>
+            <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp" />
+            <corners android:bottomRightRadius="25dp" android:bottomLeftRadius="25dp"
+                android:topLeftRadius="25dp" android:topRightRadius="25dp"/>
+        </shape>
+    </item>
+</layer-list>

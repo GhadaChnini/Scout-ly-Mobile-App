@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SearchFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        >
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="213dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_view_layout"
+            android:ems="10"
+            android:hint="Search"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#B71C1C"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/mice_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_shape"
+            android:src="@android:drawable/ic_btn_speak_now"
+            app:layout_constraintStart_toEndOf="@+id/search_text"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Replace ListView with RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            android:divider="@color/white"
+            android:dividerHeight="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_btn" />
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:background="@drawable/layout_shape"
+            android:src="@android:drawable/ic_menu_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <ImageButton
+            android:id="@+id/camera_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_shape"
+            android:src="@android:drawable/ic_menu_camera"
+            app:layout_constraintStart_toEndOf="@+id/mice_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

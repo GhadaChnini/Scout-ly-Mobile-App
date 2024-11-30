@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/black"
+    tools:context=".Activities.EditAccountActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <!-- Name Field -->
+        <TextView
+            android:id="@+id/edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Edit Your Profile"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Enter Name"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_view_red"
+            android:textColor="#B71C1C"
+            android:textColorHint="#FFCDD2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt" />
+
+        <!-- Username Field -->
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="20dp"
+
+            android:hint="Enter Username"
+            android:textColor="#B71C1C"
+            android:textColorHint="#FFCDD2"
+            android:background="@drawable/text_view_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="20dp"
+
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="#B71C1C"
+            android:textColorHint="#FFCDD2"
+            android:background="@drawable/text_view_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editUsername" />
+
+        <!-- Gender Spinner -->
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+        <!-- Birth Date Picker -->
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerGender" />
+
+        <!-- Job Field -->
+        <EditText
+            android:id="@+id/editJob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="20dp"
+
+            android:hint="Enter Job"
+            android:textColor="#B71C1C"
+            android:textColorHint="#FFCDD2"
+            android:background="@drawable/text_view_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_rounded"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editJob" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
